@@ -1,8 +1,10 @@
 import express from "express";
-import dotenv from "dotenv";
 
- const router=express.Router;
+import { register } from "../Controllers/register.controllers.js";
+ const router=express.Router();
 
 
-dotenv.config()
+
+
+router.post("/register", register)
 export default router
